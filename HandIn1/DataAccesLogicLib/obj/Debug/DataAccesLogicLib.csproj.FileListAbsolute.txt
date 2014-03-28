@@ -3,3 +3,8 @@ D:\semester4\DAB\MineDAB\Databaser\HandIn1\DataAccesLogicLib\bin\Debug\DataAcces
 D:\semester4\DAB\MineDAB\Databaser\HandIn1\DataAccesLogicLib\bin\Debug\DataAccesLogicLib.pdb
 D:\semester4\DAB\MineDAB\Databaser\HandIn1\DataAccesLogicLib\obj\Debug\DataAccesLogicLib.dll
 D:\semester4\DAB\MineDAB\Databaser\HandIn1\DataAccesLogicLib\obj\Debug\DataAccesLogicLib.pdb
+D:\semester4\DAB\Black-book.git\HandIn1\DataAccesLogicLib\bin\Debug\DataAccesLogicLib.dll
+D:\semester4\DAB\Black-book.git\HandIn1\DataAccesLogicLib\bin\Debug\DataAccesLogicLib.pdb
+D:\semester4\DAB\Black-book.git\HandIn1\DataAccesLogicLib\obj\Debug\DataAccesLogicLib.csprojResolveAssemblyReference.cache
+D:\semester4\DAB\Black-book.git\HandIn1\DataAccesLogicLib\obj\Debug\DataAccesLogicLib.dll
+D:\semester4\DAB\Black-book.git\HandIn1\DataAccesLogicLib\obj\Debug\DataAccesLogicLib.pdb

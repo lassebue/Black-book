@@ -30,7 +30,7 @@ namespace DataAccesLogicLib
                 conn.Open();
 
                 string insertString = @"
-                   INSERT INTO Person (PersonID,FirstName,SirName)
+                   INSERT INTO PersonSb (PersonID,FirstName,SirName)
                    VALUES (4, N'Tom', N'Tomsen')
                    GO
                    SELECT SCOPE_IDENTITY()
@@ -38,9 +38,9 @@ namespace DataAccesLogicLib
 
                 // prepare command string using paramters in string and returning the given identity
 
-                string insertStringParam = @"INSERT INTO [Person] (PersonID,FirstName,SirName)
+                string insertStringParam = @"INSERT INTO [PersonSb] (PersonID,FirstName,SirName)
                                                     OUTPUT INSERTED.PersonID  
-                                                    VALUES (@Data1, @Data2,@Data3,)";
+                                                    VALUES (@Data1, @Data2,@Data3)";
                 //Alternative //    ; SELECT SCOPE_IDENTITY()";
 
 

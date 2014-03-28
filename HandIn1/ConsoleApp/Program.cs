@@ -13,9 +13,9 @@ namespace ConsoleApp
         {
             Person abe = new Person();
 
-            abe.FName = "dalli";
-            abe.SName = "halli";
-            abe.id = 5;
+            abe.FName = "Parsa";
+            abe.SName = "Yousefi";
+            abe.id = 30;
             BlackBookUtil blackBook = new BlackBookUtil();
             blackBook.insertPerson(abe);
         }
