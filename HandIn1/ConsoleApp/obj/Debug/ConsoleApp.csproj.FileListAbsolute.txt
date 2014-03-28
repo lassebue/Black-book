@@ -1,0 +1,8 @@
+D:\semester4\DAB\MineDAB\Databaser\HandIn1\ConsoleApp\bin\Debug\ConsoleApp.exe.config
+D:\semester4\DAB\MineDAB\Databaser\HandIn1\ConsoleApp\bin\Debug\ConsoleApp.exe
+D:\semester4\DAB\MineDAB\Databaser\HandIn1\ConsoleApp\bin\Debug\ConsoleApp.pdb
+D:\semester4\DAB\MineDAB\Databaser\HandIn1\ConsoleApp\bin\Debug\DataAccesLogicLib.dll
+D:\semester4\DAB\MineDAB\Databaser\HandIn1\ConsoleApp\bin\Debug\DataAccesLogicLib.pdb
+D:\semester4\DAB\MineDAB\Databaser\HandIn1\ConsoleApp\obj\Debug\ConsoleApp.csprojResolveAssemblyReference.cache
+D:\semester4\DAB\MineDAB\Databaser\HandIn1\ConsoleApp\obj\Debug\ConsoleApp.exe
+D:\semester4\DAB\MineDAB\Databaser\HandIn1\ConsoleApp\obj\Debug\ConsoleApp.pdb

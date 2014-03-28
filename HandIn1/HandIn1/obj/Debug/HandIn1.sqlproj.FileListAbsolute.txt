@@ -1,0 +1,5 @@
+D:\semester4\DAB\MineDAB\Databaser\HandIn1\HandIn1\bin\Debug\HandIn1.dacpac
+D:\semester4\DAB\MineDAB\Databaser\HandIn1\HandIn1\obj\Debug\HandIn1.dll
+D:\semester4\DAB\MineDAB\Databaser\HandIn1\HandIn1\obj\Debug\HandIn1.pdb
+D:\semester4\DAB\MineDAB\Databaser\HandIn1\HandIn1\bin\Debug\HandIn1.dll
+D:\semester4\DAB\MineDAB\Databaser\HandIn1\HandIn1\bin\Debug\HandIn1.pdb
