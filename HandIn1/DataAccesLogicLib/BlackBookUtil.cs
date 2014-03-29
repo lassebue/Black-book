@@ -19,14 +19,14 @@ namespace DataAccesLogicLib
             conn =
                 new SqlConnection(
                     @" Data Source=webhotel10.iha.dk;Initial Catalog=F14I4DABH0Gr2;Persist Security Info=True;User ID=F14I4DABH0Gr2;Password=F14I4DABH0Gr2");
-            //Data Source=webhotel10.iha.dk;Initial Catalog=F14I4DABH0Gr2;Persist Security Info=True;User ID=F14I4DABH0Gr2;Password=F14I4DABH0Gr2
+           
         }
 
-        public void insertPerson(Person person)
+        public void InsertPerson(Person person)
         {
             try
             {
-                // Open the connection
+                // Open theconnection
                 conn.Open();
 
                 string insertString = @"
@@ -59,7 +59,7 @@ namespace DataAccesLogicLib
 
                     //cmd.ExecuteNonQuery(); //Does not workReturns row affected and not the identity of the new tuple/record
 
-                    //this.locPerson = person; //Make new Håndværker to currentHåndværker 
+                    //this.locPerson = person; //Make new Person to currentPerson
 
                 }
 
@@ -74,12 +74,12 @@ namespace DataAccesLogicLib
                 }
             }
         }
-    }
-}
 
-/*
 
-        public void insertPost(Post post)
+
+
+
+        public void InsertPost(Post post)
         {
             try
             {
@@ -108,17 +108,18 @@ namespace DataAccesLogicLib
                     cmd.Parameters.Add(cmd.CreateParameter()).ParameterName = "@data2";
                     cmd.Parameters.Add(cmd.CreateParameter()).ParameterName = "@data3";
                     cmd.Parameters.Add(cmd.CreateParameter()).ParameterName = "@data4";
+                    cmd.Parameters.Add(cmd.CreateParameter()).ParameterName = "@data5";
                     cmd.Parameters["@Data1"].Value = post.PostID; //.ToString("yyyy-MM-dd HH:mm:ss"); ;
                     cmd.Parameters["@Data2"].Value = post.LoanDate;
                     cmd.Parameters["@Data3"].Value = post.PaymentDate;
                     cmd.Parameters["@Data4"].Value = post.PersonID;
                     cmd.Parameters["@Data5"].Value = post.Amount;
                     //var id 
-                    post.PostID = (int)cmd.ExecuteScalar(); //Returns the identity of the new tuple/record
+                    post.PostID = (int) cmd.ExecuteScalar(); //Returns the identity of the new tuple/record
 
                     //hv.HID = (int)cmd.ExecuteNonQuery(); //Does not workReturns row affected and not the identity of the new tuple/record
 
-                    //this.locPost = post; //Make new Håndværker to currentHåndværker 
+                    //this.locPost = post; //Make new Post to currentPost
 
                 }
 
@@ -134,37 +135,33 @@ namespace DataAccesLogicLib
             }
         }
 
+
+
         public void DeletePerson(Person person)
         {
-                        try
+            try
             {
                 // Open the connection
                 conn.Open();
 
-                string insertString = @"
-                   INSERT INTO Post (PostID,LoanDate,PaymentDate,PersonID,Amount)
-                   VALUES (5, '10-11-2013','11-11-2013',1,200)
-                   GO
-                   SELECT SCOPE_IDENTITY()
-                   GO";
+                string DeletePerson =
+                    @"DELETE FROM PersonSb
+                        WHERE (PersonID = @Data1)";
+                
 
                 // prepare command string using paramters in string and returning the given identity
 
-                string insertStringParam = @"delete from Person where PersonID = @Data1";
+                string deleteString = @"delete from PersonSb where PersonID = @Data1";
                 //Alternative //    ; SELECT SCOPE_IDENTITY()";
 
 
-                using (SqlCommand cmd = new SqlCommand(insertStringParam, conn))
+                using (SqlCommand cmd = new SqlCommand(deleteString, conn))
                 {
                     // Get your parameters ready 
                     cmd.Parameters.Add(cmd.CreateParameter()).ParameterName = "@data1";
-                    cmd.Parameters["@Data5"].Value = person.id;
-                    //var id 
-                    //post.PostID = (int)cmd.ExecuteScalar(); //Returns the identity of the new tuple/record
+                    cmd.Parameters["@Data1"].Value = person.id;
+                    var id = (int)cmd.ExecuteNonQuery(); //har ikke forstået den linie??
 
-                    //hv.HID = (int)cmd.ExecuteNonQuery(); //Does not workReturns row affected and not the identity of the new tuple/record
-
-                    //this.locPost = post; //Make new Håndværker to currentHåndværker 
 
                 }
 
@@ -179,8 +176,13 @@ namespace DataAccesLogicLib
                 }
             }
 
-            
+
         }
+
+
+
+
+
 
         public void DeletePost(Post post)
         {
@@ -189,12 +191,7 @@ namespace DataAccesLogicLib
                 // Open the connection
                 conn.Open();
 
-                string insertString = @"
-                   INSERT INTO Post (PostID,LoanDate,PaymentDate,PersonID,Amount)
-                   VALUES (5, '10-11-2013','11-11-2013',1,200)
-                   GO
-                   SELECT SCOPE_IDENTITY()
-                   GO";
+          
 
                 // prepare command string using paramters in string and returning the given identity
 
@@ -206,14 +203,11 @@ namespace DataAccesLogicLib
                 {
                     // Get your parameters ready 
                     cmd.Parameters.Add(cmd.CreateParameter()).ParameterName = "@data1";
-                    cmd.Parameters["@Data5"].Value = post.PostID;
-                    //var id 
-                    //post.PostID = (int)cmd.ExecuteScalar(); //Returns the identity of the new tuple/record
-
-                    //hv.HID = (int)cmd.ExecuteNonQuery(); //Does not workReturns row affected and not the identity of the new tuple/record
-
-                    //this.locPost = post; //Make new Håndværker to currentHåndværker 
-
+                    cmd.Parameters["@Data1"].Value = post.PostID;
+                       
+                    var id = (int)cmd.ExecuteNonQuery(); //har ikke forstået den linie??
+         
+                
                 }
 
 
@@ -232,4 +226,3 @@ namespace DataAccesLogicLib
         
     }
 }
-*/

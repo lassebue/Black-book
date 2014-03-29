@@ -11,13 +11,27 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Person abe = new Person();
+            Person person = new Person();
+            Post post =new Post();
 
-            abe.FName = "Parsa";
-            abe.SName = "Yousefi";
-            abe.id = 30;
+           person.FName = "Parsa";
+           person.SName = "Yousefi";
+            person.id = 10;
             BlackBookUtil blackBook = new BlackBookUtil();
-            blackBook.insertPerson(abe);
+            //blackBook.InsertPerson(p);
+            person.id = 10;
+            blackBook.DeletePerson(person);
+
+            post.PostID = 2;
+            post.LoanDate = new DateTime(2014,02,23); 
+            post.PaymentDate=new DateTime(2014,03,10);
+            post.PersonID = 10;
+            post.Amount = 320.76;
+          
+          //  blackBook.InsertPost(post);
+
+
+
         }
     }
 }
