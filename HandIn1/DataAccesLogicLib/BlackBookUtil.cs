@@ -222,7 +222,90 @@ namespace DataAccesLogicLib
             }
             
         }
-        
+
+        public Person GetPersonInfo(string personID)
+        // Returns an object of UserClass with ID matching from the database.
+        {
+            try
+            {
+                // Open the connection
+                conn.Open();
+
+                // String with SQL statement
+                string personInfo = @"SELECT * FROM [PersonSb] WHERE PersonSb.PersonID = '" + personID + "'";
+
+                using (SqlCommand cmd = new SqlCommand(personInfo, conn))
+                {
+                    var locPerson = new Person();
+
+                    SqlDataReader rdr = cmd.ExecuteReader(); //Returns the identity of the new tuple/record
+
+
+                    while (rdr.Read())
+                    {
+                        Console.WriteLine(rdr[0]);
+
+
+                        locPerson.FName = (string)rdr["FirstName"];
+                        locPerson.SName = (string)rdr["SirName"];
+                        locPerson.id = (int)rdr["PersonID"];
+
+                    }
+                    return locPerson;
+                }
+            }
+            finally
+            {
+                // Close the connection
+                if (conn != null)
+                {
+                    conn.Close();
+                }
+            }
+        }
+
+        public List<Post> GetPostInfo(string personId)
+        // Returns an object of UserClass with ID matching from the database.
+        {
+            try
+            {
+                // Open the connection
+                conn.Open();
+
+                // String with SQL statement
+                string personInfo = @"SELECT * FROM [Post] WHERE Post.PersonID = '" + personId + "'";
+
+                using (SqlCommand cmd = new SqlCommand(personInfo, conn))
+                {
+                    var postList = new List<Post>();
+
+                    SqlDataReader reader = cmd.ExecuteReader(); //Returns the identity of the new tuple/record
+
+
+                    while (reader.Read())
+                    {
+                        var tmpPost = new Post();
+
+                        tmpPost.PostID = (int)reader["PostID"];
+                        tmpPost.PersonID = (int)reader["PersonID"];
+                        tmpPost.Amount = (int)reader["Amount"];
+                        tmpPost.LoanDate = (DateTime)reader["LoanDate"];
+                        tmpPost.PaymentDate = (DateTime)reader["PaymentDate"];
+
+                        postList.Add(tmpPost);
+                    }
+                    return postList;
+                }
+            }
+            finally
+            {
+                // Close the connection
+                if (conn != null)
+                {
+                    conn.Close();
+                }
+            }
+        }
         
     }
 }
