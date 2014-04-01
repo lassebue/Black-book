@@ -223,16 +223,16 @@ namespace DataAccesLogicLib
             
         }
 
-        public Person GetPersonInfo(string personID)
+        public Person GetPersonInfo(int personID)
         // Returns an object of UserClass with ID matching from the database.
         {
             try
             {
                 // Open the connection
                 conn.Open();
-
+         
                 // String with SQL statement
-                string personInfo = @"SELECT * FROM [PersonSb] WHERE PersonSb.PersonID = '" + personID + "'";
+                string personInfo = @"SELECT * FROM [PersonSb] WHERE PersonSb.PersonID = '" + personID.ToString() + "'";
 
                 using (SqlCommand cmd = new SqlCommand(personInfo, conn))
                 {
@@ -264,7 +264,7 @@ namespace DataAccesLogicLib
             }
         }
 
-        public List<Post> GetPostInfo(string personId)
+        public List<Post> GetPostInfo(int personId)
         // Returns an object of UserClass with ID matching from the database.
         {
             try
@@ -273,7 +273,7 @@ namespace DataAccesLogicLib
                 conn.Open();
 
                 // String with SQL statement
-                string personInfo = @"SELECT * FROM [Post] WHERE Post.PersonID = '" + personId + "'";
+                string personInfo = @"SELECT * FROM [Post] WHERE Post.PersonID = '" + personId.ToString() + "'";
 
                 using (SqlCommand cmd = new SqlCommand(personInfo, conn))
                 {

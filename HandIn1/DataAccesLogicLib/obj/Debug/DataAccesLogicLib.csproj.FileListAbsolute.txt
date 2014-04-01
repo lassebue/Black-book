@@ -8,3 +8,8 @@ D:\semester4\DAB\Black-book.git\HandIn1\DataAccesLogicLib\bin\Debug\DataAccesLog
 D:\semester4\DAB\Black-book.git\HandIn1\DataAccesLogicLib\obj\Debug\DataAccesLogicLib.csprojResolveAssemblyReference.cache
 D:\semester4\DAB\Black-book.git\HandIn1\DataAccesLogicLib\obj\Debug\DataAccesLogicLib.dll
 D:\semester4\DAB\Black-book.git\HandIn1\DataAccesLogicLib\obj\Debug\DataAccesLogicLib.pdb
+\\vmware-host\Shared Folders\lassebuesvendsen On My Mac\Google Drev\Black-book\HandIn1\DataAccesLogicLib\bin\Debug\DataAccesLogicLib.dll
+\\vmware-host\Shared Folders\lassebuesvendsen On My Mac\Google Drev\Black-book\HandIn1\DataAccesLogicLib\bin\Debug\DataAccesLogicLib.pdb
+\\vmware-host\Shared Folders\lassebuesvendsen On My Mac\Google Drev\Black-book\HandIn1\DataAccesLogicLib\obj\Debug\DataAccesLogicLib.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\lassebuesvendsen On My Mac\Google Drev\Black-book\HandIn1\DataAccesLogicLib\obj\Debug\DataAccesLogicLib.dll
+\\vmware-host\Shared Folders\lassebuesvendsen On My Mac\Google Drev\Black-book\HandIn1\DataAccesLogicLib\obj\Debug\DataAccesLogicLib.pdb

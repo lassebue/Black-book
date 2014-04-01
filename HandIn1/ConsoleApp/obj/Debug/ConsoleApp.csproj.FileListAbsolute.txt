@@ -17,3 +17,8 @@ D:\semester4\DAB\Black-book.git\HandIn1\ConsoleApp\obj\Debug\ConsoleApp.csprojRe
 \\vmware-host\Shared Folders\lassebuesvendsen On My Mac\Google Drev\Black-book\HandIn1\ConsoleApp\bin\Debug\ConsoleApp.exe.config
 \\vmware-host\Shared Folders\lassebuesvendsen On My Mac\Google Drev\Black-book\HandIn1\ConsoleApp\obj\Debug\ConsoleApp.exe
 \\vmware-host\Shared Folders\lassebuesvendsen On My Mac\Google Drev\Black-book\HandIn1\ConsoleApp\obj\Debug\ConsoleApp.pdb
+\\vmware-host\Shared Folders\lassebuesvendsen On My Mac\Google Drev\Black-book\HandIn1\ConsoleApp\bin\Debug\ConsoleApp.exe
+\\vmware-host\Shared Folders\lassebuesvendsen On My Mac\Google Drev\Black-book\HandIn1\ConsoleApp\bin\Debug\ConsoleApp.pdb
+\\vmware-host\Shared Folders\lassebuesvendsen On My Mac\Google Drev\Black-book\HandIn1\ConsoleApp\bin\Debug\DataAccesLogicLib.dll
+\\vmware-host\Shared Folders\lassebuesvendsen On My Mac\Google Drev\Black-book\HandIn1\ConsoleApp\bin\Debug\DataAccesLogicLib.pdb
+\\vmware-host\Shared Folders\lassebuesvendsen On My Mac\Google Drev\Black-book\HandIn1\ConsoleApp\obj\Debug\ConsoleApp.csprojResolveAssemblyReference.cache
