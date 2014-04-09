@@ -22,20 +22,21 @@ namespace ConsoleApp
             
             //blackBook.DeletePerson(person);
 
-            Person myPerson = blackBook.GetPersonInfo(10);
-            Console.WriteLine("{0}, {1}, {2}",myPerson.FName,myPerson.SName,myPerson.id);
+            person = blackBook.GetPersonInfo(10);
+            Console.WriteLine("{0}, {1}, {2}",person.FName,person.SName,person.id);
             Console.ReadLine();
-
+/*
             post.PostID = 2;
             post.LoanDate = new DateTime(2014,02,23); 
             post.PaymentDate=new DateTime(2014,03,10);
             post.PersonID = 10;
             post.Amount = 320.76;
           
-          //  blackBook.InsertPost(post);
+           blackBook.InsertPost(post);
 
-
-
+*/
+       
+           
         }
     }
 }

@@ -3,3 +3,12 @@ D:\semester4\DAB\MineDAB\Databaser\HandIn1\HandIn1\obj\Debug\HandIn1.dll
 D:\semester4\DAB\MineDAB\Databaser\HandIn1\HandIn1\obj\Debug\HandIn1.pdb
 D:\semester4\DAB\MineDAB\Databaser\HandIn1\HandIn1\bin\Debug\HandIn1.dll
 D:\semester4\DAB\MineDAB\Databaser\HandIn1\HandIn1\bin\Debug\HandIn1.pdb
+D:\semester4\DAB\Black-book.git\HandIn1\HandIn1\bin\Debug\HandIn1.dacpac
+D:\semester4\DAB\Black-book.git\HandIn1\HandIn1\bin\Debug\HandIn1.dll
+D:\semester4\DAB\Black-book.git\HandIn1\HandIn1\bin\Debug\HandIn1.pdb
+D:\semester4\DAB\Black-book.git\HandIn1\HandIn1\obj\Debug\Model.xml
+D:\semester4\DAB\Black-book.git\HandIn1\HandIn1\obj\Debug\refactor.xml
+D:\semester4\DAB\Black-book.git\HandIn1\HandIn1\obj\Debug\postdeploy.sql
+D:\semester4\DAB\Black-book.git\HandIn1\HandIn1\obj\Debug\predeploy.sql
+D:\semester4\DAB\Black-book.git\HandIn1\HandIn1\obj\Debug\HandIn1.dll
+D:\semester4\DAB\Black-book.git\HandIn1\HandIn1\obj\Debug\HandIn1.pdb
